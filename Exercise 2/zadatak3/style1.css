@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 8px;
+}
+
+.header {
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    gap: 8px;
+    height: 800px;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.first-div {
+    width: calc(20% - 4px);
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-div {
+    width: calc(50% - 8px);
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-div {
+    width: calc(30% - 4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    border: 1px solid black;
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .first-div {
+        width: 100%;
+        border-right: 0;
+    }
+
+    .second-div {
+        width: 100%;
+        border-right: 0;
+        border-top: 1px solid black;
+    }
+
+    .third-div {
+        width: 100%;
+        border-top: 1px solid black;
+    }
+}

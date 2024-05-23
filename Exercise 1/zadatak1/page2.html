@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script2.js"></script>
+    <script>
+        function checkRefer() {
+            let previousPageUrl = localStorage.getItem("previousPageUrl");
+            console.log(localStorage.getItem("previousPageUrl"));
+            console.log(localStorage.getItem("name"));
+            if (typeof previousPageUrl !== "undefined" && previousPageUrl !== null && previousPageUrl.includes("page1.html")) {
+                console.log(document.referrer);
+                console.log(window.history);
+            }
+            else window.location.href = "page1.html";
+            fetchQuestions();
+        }
+
+        window.onload = checkRefer();
+    </script>
+</head>
+
+<body>
+    <div id="playerName"></div><br>
+    <div>Questions</div><br>
+    <div id="questions">
+        <form name="form1" action="javascript:showNextQuestion()" method="post">
+            <!-- <div>
+                <input type="text" class="input-hide" value="0" name="questionIndex">
+            </div> -->
+            <div id="questionNumber">
+
+            </div>
+            <div>
+                <input type="radio" id="answer1" value="answer1" name="answer"><span id="answer1Container"></span>
+            </div>
+            <div>
+                <input type="radio" id="answer2" value="answer2" name="answer"><span id="answer2Container"></span>
+            </div>
+            <div>
+                <input type="radio" id="answer3" value="answer3" name="answer"><span id="answer3Container"></span>
+            </div>
+            <div>
+                <input type="radio" id="answer4" value="answer4" name="answer"><span id="answer4Container"></span>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+    <div class="header">INTERNET PROGRAMIRANJE</div>
+    <div class="mid-container">
+        <div class="mid-item">
+            <button type="button" onclick="dodaj()">Dodaj</button>
+        </div>
+        <div class="mid-item">
+            <ol id="list">
+
+            </ol>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="left-bottom-item"><a href="https://etf.unibl.org/" target="_blank">Link do sajta fakulteta</a>
+        </div>
+        <div class="right-bottom-item">1179/19</div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="novi-unos">
+            Novi unos
+        </div>
+        <form name="form1" id="form1" method="post" action="javascript:sacuvaj()">
+            <div class="input-container">
+                <input type="text" name="ime" placeholder="ime" required maxlength="15" oninput="validate()">
+            </div>
+            <div class="input-container">
+                <input type="text" name="prezime" placeholder="prezime" required maxlength="15" oninput="validate()">
+            </div>
+            <div class="button-container">
+                <div>
+                    <input type="submit" value="Sacuvaj" id="submit" disabled>
+                </div>
+                <div>
+                    <button type="button" onclick="odustani()">Odustani</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+
+<body onload="start()">
+    <div class="header">
+        IP taksi prevoz
+    </div>
+    <div class="mid-container">
+        <div class="first-card">
+            <img src="https://el.etfbl.net/login_page_1.jpg" alt="noimg">
+        </div>
+        <div class="second-card">
+            <form id="form1" name="form1" action="javascript:submitForm()" method="post">
+                <div>
+                    <input type="text" name="ime" placeholder="Ime" required oninput="load()">
+                </div>
+                <div>
+                    <input type="text" name="polaznaTacka" placeholder="Polazna tacka" required>
+                </div>
+                <div>
+                    <input type="text" name="odrediste" placeholder="Odrediste" required>
+                </div>
+                <div>
+                    <input type="date" name="datum" placeholder="Datum" required>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <button type="button" onclick="resetForm()">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="third-card">
+            <ol id="container">
+
+            </ol>
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+
+</html>

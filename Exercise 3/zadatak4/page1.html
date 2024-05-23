@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link href="style1.css" rel="stylesheet">
+    <script src="script1.js"></script>
+</head>
+
+<body onload="check()">
+    <form method="post" name="form1" id="form1" action="javascript:submitForm()">
+        <div>
+            <input type="text" required name="name" placeholder="Name" oninput="check()">
+        </div>
+        <div>
+            <input type="submit" required value="Submit" name="submit">
+        </div>
+    </form>
+</body>
+
+</html>

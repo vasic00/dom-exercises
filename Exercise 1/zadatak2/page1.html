@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        IP taksi prevoz
+    </div>
+    <div class="container">
+        <div class="flex-one">
+            <img src="https://el.etfbl.net/login_page_1.jpg" alt="slika">
+        </div>
+        <div class="flex-two">
+            <form method="post" id="form1" name="form1" action="javascript:submitForm()">
+                <div>
+                    Name: <input type="text" name="name" required="required">
+                </div>
+                <div>
+                    Starting point: <input type="text" name="start" required="required">
+                </div>
+                <div>
+                    Destination: <input type="text" name="destination" required="required">
+                </div>
+                <div>
+                    Date: <input type="date" name="date" required="required">
+                </div>
+                <div><input type="submit" value="Submit"></div>
+                <div><button type="button" onclick="resetForm()">Clear form</button></div>
+            </form>
+        </div>
+        <div class="flex-three">
+            <ol id="list">
+
+            </ol>
+        </div>
+    </div>
+    <div class="footer">IP 2023</div>
+</body>
+
+</html>

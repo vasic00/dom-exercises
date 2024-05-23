@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+    <div class="header">INTERNET PROGRAMIRANJE</div>
+    <div class="content">
+        <div class="left-part">
+            <form id="form1" method="post" name="form1" action="javascript:addStudent()">
+                <div>
+                    <label for="ime">Ime:</label>
+                    <input type="text" name="ime" required="required" onchange="checkIfValid()">
+                </div>
+                <div>
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" name="prezime" required="required" onchange="checkIfValid()">
+                </div>
+                <div>
+                    <label for="brojIndeksa">Broj indeksa:</label>
+                    <input type="text" name="brojIndeksa" required="required" onchange="checkIfValid()">
+                </div>
+                <div>
+                    <label for="godina">Godina rodjenja:</label>
+                    <input type="number" name="godina" required="required" min="1980" max="2024"
+                        onchange="checkIfValid()">
+                </div>
+                <div>
+                    <select name="program" required="required">
+                        <option value="RII">Racunarstvo i informatika</option>
+                        <option value="EIT">Elektronika i telekomunikacije</option>
+                        <option value="A">Automatika</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Submit" disabled id="submit">
+                </div>
+            </form>
+        </div>
+        <div class="right-part">
+            <div class="page2-link"><a href="page2.html">Link ka drugoj stranici</a></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Broj indeksa</th>
+                        <th>Godina rodjenja</th>
+                        <th>Program</th>
+                    </tr>
+                </thead>
+                <tbody id="tb">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

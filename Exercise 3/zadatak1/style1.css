@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.card {
+    width: calc(33.3% - 7px);
+    height: 500px;
+    /* margin: 10px; */
+    border: 1px solid black;
+    min-width: 300px;
+}
+
+.second-container {
+    padding-bottom: 10px;
+}
+
+/* .middle-card {
+    margin-left: 0px;
+    margin-right: 0px;
+} */

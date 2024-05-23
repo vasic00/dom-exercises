@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    </link>
+</head>
+
+<body onload="loadItems()">
+    <form id="form1" name="form1" class="first-form" action="javascript:submitForm()" method="post">
+        <div id="card-container">
+
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="Proceed" class="submit">
+        </div>
+    </form>
+    <form id="form2" name="form2" action="javascript:submitPayment()" method="post" style="display:none">
+        <div>Select payment type: </div>
+        <select name="paymentType" onchange="showPaymentInput()" required>
+            <option value="" selected disabled hidden></option>
+            <option value="card">Card</option>
+            <option value="live">Live</option>
+        </select>
+        <div id="paymentTypeInputContainer">
+
+        </div>
+        <input type="submit" value="submit">
+    </form>
+    <div id="result" style="display:none">
+        <div id="paymentResult">
+
+        </div>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </thead>
+            <tbody id="tb">
+
+            </tbody>
+        </table>
+        <div id="totalPrice">
+
+        </div>
+    </div>
+</body>
+
+</html>
